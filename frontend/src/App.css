@@ -94,3 +94,110 @@
   height: auto;
   border-radius: 20px;
 }
+
+/* LANDING PAGE */
+.landingPageContainer {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0F172A, #1E293B);
+    color: white;
+}
+
+/* NAVBAR */
+.landingNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.navHeader h2 {
+    margin: 0;
+    font-weight: 700;
+}
+
+.navlist {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.navItem {
+    cursor: pointer;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+.navItem:hover {
+    opacity: 1;
+}
+
+.navButton {
+    padding: 8px 18px;
+    background: #2563EB;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navButton:hover {
+    background: #1D4ED8;
+}
+
+/* HERO SECTION */
+.landingMainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+    gap: 40px;
+}
+
+.landingText h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #FF9839;
+}
+
+.landingText p {
+    font-size: 18px;
+    opacity: 0.85;
+    margin-bottom: 30px;
+}
+
+.ctaButton {
+    display: inline-block;
+    background: linear-gradient(135deg, #2563EB, #1D4ED8);
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.ctaButton a {
+    color: white;
+    text-decoration: none;
+}
+
+/* IMAGE */
+.landingImage img {
+    width: 100%;
+    max-width: 420px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .landingMainContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .landingText h1 {
+        font-size: 36px;
+    }
+
+    .landingNav {
+        padding: 20px 30px;
+    }
+}
